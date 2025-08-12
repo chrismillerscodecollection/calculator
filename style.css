@@ -1,0 +1,60 @@
+/* Center everything on the page*/
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Mono';
+}
+
+.calc {
+    height: 457px;
+    width: 306px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #C4BEBB;
+}
+
+.calc-display {
+    height: 55px;
+    width: 249px;
+    margin: auto;
+    border: none;
+    background-color: #FFFCFB;
+}
+
+
+.calc-buttons {
+    height: 280px;
+    width: 242px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    margin: 0 31px 50px 31px;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.number {
+    background-color: #9A2257;
+    color: #FFFFFF;
+}
+
+.operator, .special {
+    background-color: #272929;
+    color: #FFFFFF;
+}
+
+.placeholder {
+    background-color: #494786;
+}
+
+button {
+    height: 40px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
