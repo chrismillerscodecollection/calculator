@@ -1,0 +1,109 @@
+/* margin / border / background / padding / height × width */
+:root {
+    --number-button-shadow-color: 334deg 76% 20%;
+    --number-button-shadow-elevation-medium:
+        0.3px 0.5px 0.7px hsl(var(--number-button-shadow-color) / 0.36),
+        0.8px 1.6px 2px -0.8px hsl(var(--number-button-shadow-color) / 0.36),
+        2.1px 4.1px 5.2px -1.7px hsl(var(--number-button-shadow-color) / 0.36),
+        5px 10px 12.6px -2.5px hsl(var(--number-button-shadow-color) / 0.36);
+
+
+    --placeholder-button-shadow-color: 243deg 47% 6%;
+    --placeholder-button-elevation-medium: 
+    0.3px 0.5px 0.7px hsl(var(--placeholder-button-shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--placeholder-button-shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--placeholder-button-shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--placeholder-button-shadow-color) / 0.36);
+
+    --operator-button-shadow-color: 180deg 7% 0%;
+    --operator-button-elevation-medium:  
+    0.3px 0.5px 0.7px hsl(var(--operator-button-shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--operator-button-shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--operator-button-shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--operator-button-shadow-color) / 0.36);
+
+    --calculator-shadow-color: 0deg 0% 22%;
+    --calculator-elevation-medium:
+     0.3px 0.5px 0.7px hsl(var(--operator-button-shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--operator-button-shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--operator-button-shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--operator-button-shadow-color) / 0.36);
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto Mono';
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #C4BEBB;
+    box-shadow: var(--calculator-elevation-medium);
+    height: 457px;
+    width: 306px;
+}
+
+.calc-display {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    background-color: #FFFCFB;
+    border-radius: 5px;
+    padding-top: 14px;
+    padding-right: 10px;
+    height: 55px;
+    width: 249px;
+    font-size: 28px;
+}
+
+.calc-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    margin: 0 31px 50px 31px;
+    gap: 10px;
+    padding-top: 10px;
+    height: 280px;
+    width: 242px;
+}
+
+.number {
+    background-color: #9A2257;
+    color: #FFFFFF;
+    box-shadow: var(--number-button-shadow-elevation-medium);
+}
+
+.operator, .special {
+    background-color: #272929;
+    color: #FFFFFF;
+    box-shadow: var(--operator-button-elevation-medium);
+
+}
+
+.placeholder {
+    background-color: #494786;
+    box-shadow: var(--placeholder-button-elevation-medium);
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 50px;
+}
+
+button:hover {
+    filter: brightness(60%);
+}
+
+button:active, .active {
+    box-shadow: inset 3px 3px rgb(41, 41, 41);
+    transform: translateY(4px);
+}
